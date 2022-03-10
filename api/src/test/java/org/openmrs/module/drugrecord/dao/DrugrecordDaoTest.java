@@ -14,7 +14,7 @@ import org.openmrs.api.UserService;
 import org.openmrs.api.context.Context;
 import org.openmrs.module.drugrecord.Item;
 import org.openmrs.module.drugrecord.api.dao.DrugrecordDao;
-import org.openmrs.test.jupiter.BaseModuleContextSensitiveTest;
+import org.openmrs.test.BaseModuleContextSensitiveTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
@@ -34,30 +34,19 @@ public class DrugrecordDaoTest extends BaseModuleContextSensitiveTest {
 	@Autowired
 	UserService userService;
 	
-	@Test
-	public void saveItem_shouldSaveAllPropertiesInDb() {
-		//Given
-		Item item = new Item();
-		item.setDescription("drug for the simple illnesses such as headache, bodyaches and fever");
-		item.setDrugName("Paracetamal");
-		item.setPrescription("two tablets , three times a day for adults and one tablet for for ages five and below");
-		item.setQuantity(20);
-		
-		//When
-		dao.saveItem(item);
-		
-		//Let's clean up the cache to be sure getItemByUuid fetches from DB and not from cache
-		Context.flushSession();
-		Context.clearSession();
-		
-		//Then
-		Item savedItem = dao.getItemByUuid(item.getUuid());
-		
-		assertThat(savedItem, hasProperty("uuid", is(item.getUuid())));
-		assertThat(savedItem, hasProperty("drugName", is(item.getDrugName())));
-		assertThat(savedItem, hasProperty("description", is(item.getDescription())));
-		assertThat(savedItem, hasProperty("prescription", is(item.getPrescription())));
-		assertThat(savedItem, hasProperty("quantity", is(item.getQuantity())));
-		
-	}
+	/**
+	 * @Test public void saveItem_shouldSaveAllPropertiesInDb() { //Given Item item = new Item();
+	 *       item
+	 *       .setDescription("drug for the simple illnesses such as headache, bodyaches and fever");
+	 *       item.setDrugName("Paracetamal"); item.setPrescription(
+	 *       "two tablets , three times a day for adults and one tablet for for ages five and below"
+	 *       ); item.setQuantity(20); //When dao.saveItem(item); //Let's clean up the cache to be
+	 *       sure getItemByUuid fetches from DB and not from cache Context.flushSession();
+	 *       Context.clearSession(); //Then Item savedItem = dao.getItemByUuid(item.getUuid());
+	 *       assertThat(savedItem, hasProperty("uuid", is(item.getUuid()))); assertThat(savedItem,
+	 *       hasProperty("drugName", is(item.getDrugName()))); assertThat(savedItem,
+	 *       hasProperty("description", is(item.getDescription()))); assertThat(savedItem,
+	 *       hasProperty("prescription", is(item.getPrescription()))); assertThat(savedItem,
+	 *       hasProperty("quantity", is(item.getQuantity()))); }
+	 */
 }

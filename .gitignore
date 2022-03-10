@@ -1,73 +1,55 @@
-api/.settings/org.eclipse.core.resources.prefs
-api/.settings/org.eclipse.jdt.apt.core.prefs
-api/.settings/org.eclipse.jdt.core.prefs
-api/.settings/org.eclipse.m2e.core.prefs
-api/.project
-api/.classpath
-.vscode/tasks.json
-.settings/org.eclipse.m2e.core.prefs
-.settings/org.eclipse.core.resources.prefs
+# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+
+# Other files and folders
+.settings/
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Project files
+.settings
 .project
-api/target/classes/liquibase.xml
-api/target/classes/messages_es.properties
-api/target/classes/messages_fr.properties
-api/target/classes/messages.properties
-api/target/classes/moduleApplicationContext.xml
-api/target/classes/org/openmrs/module/drugrecord/DrugrecordActivator.class
-api/target/classes/org/openmrs/module/drugrecord/DrugrecordConfig.class
-api/target/classes/org/openmrs/module/drugrecord/Item.class
-api/target/classes/org/openmrs/module/drugrecord/api/DrugrecordService.class
-api/target/classes/org/openmrs/module/drugrecord/api/dao/DrugrecordDao.class
-api/target/classes/org/openmrs/module/drugrecord/api/impl/DrugrecordServiceImpl.class
-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
-api/target/surefire-reports/org.openmrs.module.drugrecord.dao.DrugrecordDaoTest.txt
-api/target/surefire-reports/org.openmrs.module.drugrecord.DrugrecordServiceTest.txt
-api/target/surefire-reports/TEST-org.openmrs.module.drugrecord.dao.DrugrecordDaoTest.xml
-api/target/surefire-reports/TEST-org.openmrs.module.drugrecord.DrugrecordServiceTest.xml
-api/target/test-classes/org/openmrs/module/drugrecord/DrugrecordServiceTest.class
-api/target/test-classes/org/openmrs/module/drugrecord/dao/DrugrecordDaoTest.class
-omod/.classpath
-omod/.factorypath
-omod/.settings/org.eclipse.core.resources.prefs
-omod/.settings/org.eclipse.jdt.apt.core.prefs
-omod/.settings/org.eclipse.jdt.core.prefs
-omod/.settings/org.eclipse.m2e.core.prefs
-omod/target/drugrecord-1.0.0-SNAPSHOT-tests.jar
-omod/target/drugrecord-1.0.0-SNAPSHOT.jar
-omod/target/drugrecord-1.0.0-SNAPSHOT.omod
-omod/target/classes/config.xml
-omod/target/classes/webModuleApplicationContext.xml
-omod/target/classes/org/openmrs/module/drugrecord/extension/html/AdminList.class
-omod/target/classes/org/openmrs/module/drugrecord/fragment/controller/UsersFragmentController.class
-omod/target/classes/org/openmrs/module/drugrecord/web/controller/DrugrecordController.class
-omod/target/classes/web/module/drugrecord.jsp
-omod/target/classes/web/module/fragments/users.gsp
-omod/target/classes/web/module/pages/drugrecord.gsp
-omod/target/dependency-maven-plugin-markers/org.openmrs.module-drugrecord-api-jar-1.0.0-SNAPSHOT.marker
-omod/target/drugrecord-1.0.0-SNAPSHOT/config.xml
-omod/target/drugrecord-1.0.0-SNAPSHOT/liquibase.xml
-omod/target/drugrecord-1.0.0-SNAPSHOT/messages_es.properties
-omod/target/drugrecord-1.0.0-SNAPSHOT/messages_fr.properties
-omod/target/drugrecord-1.0.0-SNAPSHOT/messages.properties
-omod/target/drugrecord-1.0.0-SNAPSHOT/moduleApplicationContext.xml
-omod/target/drugrecord-1.0.0-SNAPSHOT/webModuleApplicationContext.xml
-omod/target/drugrecord-1.0.0-SNAPSHOT/lib/drugrecord-api-1.0.0-SNAPSHOT.jar
-omod/target/drugrecord-1.0.0-SNAPSHOT/org/openmrs/module/drugrecord/extension/html/AdminList.class
-omod/target/drugrecord-1.0.0-SNAPSHOT/org/openmrs/module/drugrecord/fragment/controller/UsersFragmentController.class
-omod/target/drugrecord-1.0.0-SNAPSHOT/org/openmrs/module/drugrecord/web/controller/DrugrecordController.class
-omod/target/drugrecord-1.0.0-SNAPSHOT/web/module/drugrecord.jsp
-omod/target/drugrecord-1.0.0-SNAPSHOT/web/module/fragments/users.gsp
-omod/target/drugrecord-1.0.0-SNAPSHOT/web/module/pages/drugrecord.gsp
-omod/target/maven-archiver/pom.properties
-omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
-omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
-omod/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
-omod/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
-omod/target/surefire-reports/org.openmrs.module.drugrecord.AdminListExtensionTest.txt
-omod/target/surefire-reports/TEST-org.openmrs.module.drugrecord.AdminListExtensionTest.xml
-omod/target/test-classes/org/openmrs/module/drugrecord/AdminListExtensionTest.class
-api/target/maven-java-formatter-cache.properties
-omod/target/maven-java-formatter-cache.properties
+.classpath
+target
+*.iml
+*.factorypath
+.idea
+.vscode/
+.eclipse/

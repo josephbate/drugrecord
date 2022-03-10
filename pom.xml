@@ -66,6 +66,6 @@
 	</pluginRepositories>
 
 	<properties>
-		<openmrsPlatformVersion>2.4.3</openmrsPlatformVersion>
+		<openmrsPlatformVersion>2.2.0</openmrsPlatformVersion>
 	</properties>
 </project>
